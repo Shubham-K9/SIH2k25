@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Subtle animated bluish background for Login */
+@keyframes loginGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+:root {
+  --gradient-1: #0ea5e9;
+  --gradient-2: #a855f7;
+  --gradient-3: #22d3ee;
+}
+
+@keyframes gradientPan {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Global vibrant gradient background helper */
+.bg-live-gradient {
+  background-image: linear-gradient(120deg, var(--gradient-1), var(--gradient-2), var(--gradient-3));
+  background-size: 200% 200%;
+  animation: gradientPan 10s ease infinite;
+}
+
+/* Alternate palettes */
+.bg-live-gradient-aurora {
+  background-image: linear-gradient(120deg, #22d3ee, #a78bfa, #34d399, #f472b6);
+  background-size: 250% 250%;
+  animation: gradientPan 12s ease-in-out infinite;
+}
+
+.bg-live-gradient-sunset {
+  background-image: linear-gradient(120deg, #fb7185, #f59e0b, #f472b6, #f97316);
+  background-size: 250% 250%;
+  animation: gradientPan 12s ease-in-out infinite;
+}
+
+.bg-live-gradient-ocean {
+  background-image: linear-gradient(120deg, #0ea5e9, #22d3ee, #14b8a6, #2563eb);
+  background-size: 250% 250%;
+  animation: gradientPan 12s ease-in-out infinite;
+}
+
+/* Conic gradient animation utility (for headers, cards) */
+@keyframes gradientSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-gradient-pan {
+  background-size: 200% 200% !important;
+  animation: gradientPan 12s ease-in-out infinite;
+}
+
+.login-animated-bg {
+  background-image:
+    radial-gradient(1200px 600px at 10% -10%, rgba(99, 102, 241, 0.18), rgba(99, 102, 241, 0) 50%),
+    radial-gradient(900px 500px at 110% 10%, rgba(59, 130, 246, 0.12), rgba(59, 130, 246, 0) 50%),
+    linear-gradient(120deg, #eef2ff, #e0f2fe, #ecfeff);
+  background-size: 180% 180%;
+  animation: loginGradient 16s ease-in-out infinite;
+}
+
+:root {
+  --toast-bg: rgba(17, 24, 39, 0.95);
+}
+
+body {
+  @apply text-gray-800;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium shadow-sm transition-colors;
+}
+
+.btn-primary {
+  @apply bg-brand text-white hover:bg-brand-dark;
+}
+
+.card {
+  @apply rounded-xl bg-white p-4 shadow;
+}
+
+.input {
+  @apply w-full rounded-lg border border-gray-300 bg-white px-3 py-2 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30;
+}
+
+.label {
+  @apply mb-1 block text-sm font-medium text-gray-700;
+}
+
+.toast {
+  @apply fixed right-4 top-4 z-50 rounded-md px-4 py-2 text-white shadow-lg;
+  background: var(--toast-bg);
+}
+
