@@ -1,3 +1,4 @@
+
 # ðŸ”¥ NAMASTE â†” ICD-11 Dual-Coding FHIR Integration Microservice  
 ### ðŸ§  Smart India Hackathon (SIH 2025) Project  
 
@@ -50,6 +51,8 @@ A lightweight, FHIR-compliant terminology microservice that integrates **Indiaâ€
 2. NDHM Gateway verifies credentials â†’ issues access token.  
 3. Role-based access (Doctor / Patient / Ministry).  
 4. Every action is logged (ISO 22600 audit trail).
+<p align="center"> <img src="./assets/login-page.png" alt="Login Page" width="800"/> </p>
+<p align="center"> <img src="./assets/home-page.png" alt="Home Page" width="800"/> </p>
 
 ---
 
@@ -57,6 +60,8 @@ A lightweight, FHIR-compliant terminology microservice that integrates **Indiaâ€
 - FHIR JSON schema validation (HL7 R4).  
 - Accuracy metrics: Precision, Recall, F1-score for mapping validation.  
 - Unit tests using **pytest** and **FHIR validator**.
+<p align="center"> <img src="./assets/patient-record.png" alt="Patient Data" width="800"/> </p>
+<p align="center"> <img src="./assets/diagnosis.png" alt="Diagnosise" width="800"/> </p>
 
 ---
 
@@ -64,13 +69,14 @@ A lightweight, FHIR-compliant terminology microservice that integrates **Indiaâ€
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/<your-username>/NAMASTE-ICD11-Integration.git
+git clone https://github.com/Shubham-K9/NAMASTE-ICD11-Integration.git
 cd NAMASTE-ICD11-Integration
 ---
 
 ```
 ###2.To Run the Project:
+-Make sure npm dependencies are installed in your machine
 -npm run dev
--It will be live on http://localhost:5173(Vite Default Port);
+-It will be live on http://localhost:5173 
 
 
