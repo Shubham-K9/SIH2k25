@@ -62,7 +62,7 @@ A lightweight, FHIR-compliant terminology microservice that integrates **Indiaâ€
 - Unit tests using **pytest** and **FHIR validator**.
 <p align="center"> <img src="./assest/patient-record.png" alt="Patient Data" width="800"/> </p>
 <p align="center"> <img src="./assest/result.png" alt="Diagnosis" width="800"/> </p>
-<p align="center"> <img src="./assest/audit.png" alt="audit" width="800"/> </p>
+<p align="center"> <img src="./assest/audit-log.png" alt="audit" width="800"/> </p>
 
 
 ---
