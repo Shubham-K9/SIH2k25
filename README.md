@@ -61,7 +61,9 @@ A lightweight, FHIR-compliant terminology microservice that integrates **Indiaâ€
 - Accuracy metrics: Precision, Recall, F1-score for mapping validation.  
 - Unit tests using **pytest** and **FHIR validator**.
 <p align="center"> <img src="./assest/patient-record.png" alt="Patient Data" width="800"/> </p>
-<p align="center"> <img src="./assest/result.png" alt="Diagnosise" width="800"/> </p>
+<p align="center"> <img src="./assest/result.png" alt="Diagnosis" width="800"/> </p>
+<p align="center"> <img src="./assest/audit.png" alt="audit" width="800"/> </p>
+
 
 ---
 
